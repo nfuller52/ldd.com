@@ -1,19 +1,5 @@
 <?php get_header(); ?>
-<nav class="navbar navbar-toggleable-md navbar-light bg-faded main-navbar fixed-top" id="main-navbar">
-      <div class="container nav-container">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon ml-auto"></span></button><a class="navbar-brand" href="#">legion dèl <span class="primary">diablo</span></a>
-        <div class="collapse navbar-collapse" id="main-nav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="<?php echo ldd_navigation_link( 'news' ); ?>">News</a></li>
-            <li class="nav-item"><a class="nav-link" href="<?php echo ldd_navigation_link( 'progress' ); ?>">Progress</a></li>
-            <li class="nav-item"><a class="nav-link" href="<?php echo ldd_navigation_link( 'recruitment' ); ?>">Recruitment</a></li>
-            <li class="nav-item"><a class="nav-link" href="#forum">Forum</a></li>
-            <li class="nav-item"><a class="nav-link" href="#roster">Roster</a></li>
-            <li class="nav-item cta"><a class="nav-link cta" href="#">Apply</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <?php include( LDD_DIR_PATH . '/partials/navigation.php' ); ?>
     <section class="jumbotron-fluid hero" id="main-hero">
       <div id="particles"></div>
       <div class="container" id="hero-items">

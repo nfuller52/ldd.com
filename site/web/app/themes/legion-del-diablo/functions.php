@@ -1,5 +1,10 @@
 <?php
 
+define( 'LDD_DIR_PATH', get_template_directory() );
+define( 'LDD_DIR_URL',  get_template_directory_uri() );
+
+require_once( LDD_DIR_PATH . '/lib/wp_bootstrap_navwalker.php' );
+
 function ldd_styles_enqueue() {
 
     // Stylesheets
@@ -19,7 +24,7 @@ add_action( 'wp_enqueue_scripts', 'ldd_styles_enqueue' );
 function ldd_theme_setup() {
 
     add_theme_support( 'menus' );
-    register_nav_menu( 'primary', 'Primary navigation: does not support submenus.' );
+    register_nav_menu( 'primary', __( 'Primary Navigation', 'Legion Dèl Diablo' ) );
 
 }
 add_action( 'init', 'ldd_theme_setup' );
