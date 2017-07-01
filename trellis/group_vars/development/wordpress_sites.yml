@@ -3,11 +3,9 @@
 # Define accompanying passwords/secrets in group_vars/development/vault.yml
 
 wordpress_sites:
-  legiondeldiablo.com:
+  legiondeldiablo.dev:
     site_hosts:
-      - canonical: legiondeldiablo.com
-        redirects:
-          - www.legiondeldiablo.com
+      - canonical: legiondeldiablo.dev
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
     admin_email: nfuller52@gmail.com
     multisite:
