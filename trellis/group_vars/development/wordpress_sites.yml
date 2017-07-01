@@ -3,7 +3,7 @@
 # Define accompanying passwords/secrets in group_vars/development/vault.yml
 
 wordpress_sites:
-  example.com:
+  legiondeldiablo.com:
     site_hosts:
       - canonical: legiondeldiablo.com
         redirects:
