@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "75d2218779ae363dbc1f47acdd7d39f1",
+    "content-hash": "3b07ea15c4acd99bc6c7b403507fbb68",
     "packages": [
         {
             "name": "afragen/github-updater",
@@ -462,6 +462,45 @@
             "time": "2016-09-01T10:05:43+00:00"
         },
         {
+            "name": "wow-ldd/wow-guild-roster",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wow-ldd/wow-guild-roster.git",
+                "reference": "9ada6d01b656bdd5b0dd3f9d0e805b4ae832b6ea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wow-ldd/wow-guild-roster/zipball/9ada6d01b656bdd5b0dd3f9d0e805b4ae832b6ea",
+                "reference": "9ada6d01b656bdd5b0dd3f9d0e805b4ae832b6ea",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "^1.0",
+                "php": ">=5.3"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPLv2"
+            ],
+            "authors": [
+                {
+                    "name": "Nick Fuller",
+                    "email": "nfuller52+ldd@gmail.com"
+                }
+            ],
+            "keywords": [
+                "guild",
+                "plugin",
+                "warcraft",
+                "wordpress",
+                "world-of-warcraft",
+                "wow"
+            ],
+            "time": "2017-07-01 21:29:18"
+        },
+        {
             "name": "wp-sync-db/wp-sync-db",
             "version": "dev-master",
             "source": {
@@ -611,7 +650,8 @@
     "stability-flags": {
         "wp-sync-db/wp-sync-db": 20,
         "wp-sync-db/wp-sync-db-media-files": 20,
-        "bbpress/bbpress": 5
+        "bbpress/bbpress": 5,
+        "wow-ldd/wow-guild-roster": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
