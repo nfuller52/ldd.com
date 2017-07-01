@@ -4,8 +4,42 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "eca0ca19f4284ede3b6badf507d7a95d",
+    "content-hash": "70fabec222c1c4e51557fc04850ec520",
     "packages": [
+        {
+            "name": "bbpress/bbpress",
+            "version": "2.6-rc-3",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/bbpress",
+                "reference": "/tags/2.6-rc-3/@1677059"
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=5.2.4"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "bbPress Contributors",
+                    "homepage": "https://bbpress.org/about/"
+                }
+            ],
+            "description": "bbPress is forum software with a twist from the creators of WordPress.",
+            "homepage": "https://bbpress.org",
+            "keywords": [
+                "bulletin board",
+                "community",
+                "forum",
+                "support",
+                "wordpress"
+            ],
+            "time": "2017-06-12T22:00:59+00:00"
+        },
         {
             "name": "composer/installers",
             "version": "v1.0.25",
@@ -529,7 +563,8 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "wp-sync-db/wp-sync-db": 20,
-        "wp-sync-db/wp-sync-db-media-files": 20
+        "wp-sync-db/wp-sync-db-media-files": 20,
+        "bbpress/bbpress": 5
     },
     "prefer-stable": false,
     "prefer-lowest": false,
