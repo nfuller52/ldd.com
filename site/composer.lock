@@ -4,8 +4,55 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "70fabec222c1c4e51557fc04850ec520",
+    "content-hash": "75d2218779ae363dbc1f47acdd7d39f1",
     "packages": [
+        {
+            "name": "afragen/github-updater",
+            "version": "6.3.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/afragen/github-updater.git",
+                "reference": "56b4a5608dedd664b62d7004045aed10185d0ba2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/afragen/github-updater/zipball/56b4a5608dedd664b62d7004045aed10185d0ba2",
+                "reference": "56b4a5608dedd664b62d7004045aed10185d0ba2",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "^1.0",
+                "php": ">=5.3"
+            },
+            "type": "wordpress-plugin",
+            "autoload": {
+                "psr-4": {
+                    "Fragen\\GitHub_Updater\\": "src/GitHub_Updater/"
+                },
+                "classmap": [],
+                "files": []
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPLv2"
+            ],
+            "authors": [
+                {
+                    "name": "Andy Fragen",
+                    "email": "andy@thefragens.com",
+                    "homepage": "https://thefragens.com",
+                    "role": "Developer"
+                }
+            ],
+            "keywords": [
+                "install",
+                "plugin",
+                "theme",
+                "updater",
+                "wordpress"
+            ],
+            "time": "2017-06-29T21:13:00+00:00"
+        },
         {
             "name": "bbpress/bbpress",
             "version": "2.6-rc-3",
