@@ -23,20 +23,9 @@ add_action( 'wp_enqueue_scripts', 'ldd_styles_enqueue' );
 
 function ldd_theme_setup() {
 
+    add_theme_support( 'post-thumbnails' );
     add_theme_support( 'menus' );
     register_nav_menu( 'primary', __( 'Primary Navigation', 'Legion Dèl Diablo' ) );
 
 }
 add_action( 'init', 'ldd_theme_setup' );
-
-function ldd_navigation_link( $href ) {
-
-    $result = '#' . $href;
-
-    if ( ! is_front_page() ) {
-        $result = get_site_url() . '/' . $result;
-    }
-
-    return $result;
-
-}
