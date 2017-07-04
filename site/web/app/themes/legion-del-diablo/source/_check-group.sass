@@ -1,0 +1,43 @@
+.check-group
+  user-select: none
+  border: none
+  display: block
+  margin: 20px 0
+  width: 100%
+  overflow: hidden
+  text-align: center
+  background-color: $primary
+
+  input[type=checkbox]
+    position: absolute
+    visibility: hidden
+    display: none
+    top: 0
+    left: 0
+
+  label
+    color: $white
+    display: inline-block
+    cursor: pointer
+    font-weight: 400
+    padding: 6px 8px
+    margin: 0
+    text-transform: uppercase
+    transition: all 300ms
+
+  input[type=checkbox]:checked + label
+    color: $white
+    background: $grey
+
+  @include wow-class-label-filter-colors(death-knight, $color-death-knight, $white)
+  @include wow-class-label-filter-colors(demon-hunter, $color-demon-hunter, $white)
+  @include wow-class-label-filter-colors(druid, $color-druid, $white)
+  @include wow-class-label-filter-colors(hunter, $color-hunter, $white)
+  @include wow-class-label-filter-colors(mage, $color-mage, $white)
+  @include wow-class-label-filter-colors(monk, $color-monk, $grey)
+  @include wow-class-label-filter-colors(paladin, $color-paladin, $white)
+  @include wow-class-label-filter-colors(priest, $color-priest, $grey)
+  @include wow-class-label-filter-colors(rogue, $color-rogue, $grey)
+  @include wow-class-label-filter-colors(shaman, $color-shaman, $white)
+  @include wow-class-label-filter-colors(warlock, $color-warlock, $white)
+  @include wow-class-label-filter-colors(warrior, $color-warrior, $white)

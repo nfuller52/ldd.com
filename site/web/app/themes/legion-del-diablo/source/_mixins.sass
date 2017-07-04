@@ -1,3 +1,11 @@
 @mixin recruitment-class-card($name)
   .recruitment-#{$name}
     background-image: url("../images/recruitment-#{$name}-bg.jpg")
+
+@mixin wow-class-label-filter-colors($class-name, $background-color, $color)
+  label[for=#{$class-name}-filter]:hover
+    background-color: $background-color
+    color: $color
+  input[type=checkbox]:checked + label[for=#{$class-name}-filter]
+      background-color: $background-color
+      color: $color

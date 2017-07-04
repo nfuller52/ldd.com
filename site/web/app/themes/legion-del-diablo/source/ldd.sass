@@ -6,6 +6,16 @@
 @import 'page-modules'
 @import 'cards'
 @import 'progressbars'
+@import 'check-group'
+
+@import 'misc-styles'
+
+html
+  position: relative
+  min-height: 100%
+
+body
+  margin-bottom: 290px
 
 .primary
   color: $primary
@@ -18,14 +28,26 @@ a
     color: darken($primary, 10%)
     text-decoration: none
 
+  &:active,
+  &:focus
+    color: darken($primary, 10%)
+    text-decoration: underline
+
 footer
+  position: absolute
+  width: 100%
+  bottom: 0
   height: 244px
-  padding-top: 120px
+  line-height: 244px
   background-color: $grey
   color: $white
   font:
     family: 'Teko', sans-serif
     size: 1.2em
+
+  p
+    margin: 0
+    padding: 0
 
   .right
     text-align: right

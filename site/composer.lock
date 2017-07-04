@@ -467,12 +467,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wow-ldd/wow-guild-roster.git",
-                "reference": "9ada6d01b656bdd5b0dd3f9d0e805b4ae832b6ea"
+                "reference": "eb86eff6c1eb352b0caec9afd1f0c350311cf644"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wow-ldd/wow-guild-roster/zipball/9ada6d01b656bdd5b0dd3f9d0e805b4ae832b6ea",
-                "reference": "9ada6d01b656bdd5b0dd3f9d0e805b4ae832b6ea",
+                "url": "https://api.github.com/repos/wow-ldd/wow-guild-roster/zipball/eb86eff6c1eb352b0caec9afd1f0c350311cf644",
+                "reference": "eb86eff6c1eb352b0caec9afd1f0c350311cf644",
                 "shasum": ""
             },
             "require": {
@@ -498,7 +498,7 @@
                 "world-of-warcraft",
                 "wow"
             ],
-            "time": "2017-07-01 21:29:18"
+            "time": "2017-07-04 17:32:18"
         },
         {
             "name": "wp-sync-db/wp-sync-db",
