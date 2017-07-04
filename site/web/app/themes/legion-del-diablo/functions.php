@@ -24,8 +24,27 @@ add_action( 'wp_enqueue_scripts', 'ldd_styles_enqueue' );
 function ldd_theme_setup() {
 
     add_theme_support( 'post-thumbnails' );
+    add_theme_support( 'widgets' );
     add_theme_support( 'menus' );
     register_nav_menu( 'primary', __( 'Primary Navigation', 'Legion Dèl Diablo' ) );
 
 }
 add_action( 'init', 'ldd_theme_setup' );
+
+function ldd_widget_setup() {
+
+    register_sidebar(
+        array(
+            'name'          => 'Sidebar',
+            'id'            => 'ldd-sidebar-1',
+            'class'         => 'ldd-custom',
+            'description'   => 'Standard sidebar',
+            'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</aside>',
+            'before_title'  => '<h1 class="widget-title">',
+            'after_title'   => '</h1>',
+        )
+    );
+
+}
+add_action( 'widgets_init', 'ldd_widget_setup' );

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "3b07ea15c4acd99bc6c7b403507fbb68",
+    "content-hash": "46e3a920c0070961b6c52fd0cdd295ad",
     "packages": [
         {
             "name": "afragen/github-updater",
@@ -463,7 +463,7 @@
         },
         {
             "name": "wow-ldd/wow-guild-roster",
-            "version": "dev-master",
+            "version": "0.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wow-ldd/wow-guild-roster.git",
@@ -498,7 +498,7 @@
                 "world-of-warcraft",
                 "wow"
             ],
-            "time": "2017-07-04 17:32:18"
+            "time": "2017-07-04T17:32:18+00:00"
         },
         {
             "name": "wp-sync-db/wp-sync-db",
@@ -563,6 +563,66 @@
                 "wp-sync-db"
             ],
             "time": "2016-03-07T16:34:12+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/cleantalk-spam-protect",
+            "version": "5.69",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/cleantalk-spam-protect/",
+                "reference": "tags/5.69"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/cleantalk-spam-protect.5.69.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/cleantalk-spam-protect/"
+        },
+        {
+            "name": "wpackagist-plugin/gd-bbpress-attachments",
+            "version": "2.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/gd-bbpress-attachments/",
+                "reference": "tags/2.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/gd-bbpress-attachments.2.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/gd-bbpress-attachments/"
+        },
+        {
+            "name": "wpackagist-plugin/gd-bbpress-tools",
+            "version": "1.9",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/gd-bbpress-tools/",
+                "reference": "tags/1.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/gd-bbpress-tools.1.9.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/gd-bbpress-tools/"
         }
     ],
     "packages-dev": [
@@ -650,8 +710,7 @@
     "stability-flags": {
         "wp-sync-db/wp-sync-db": 20,
         "wp-sync-db/wp-sync-db-media-files": 20,
-        "bbpress/bbpress": 5,
-        "wow-ldd/wow-guild-roster": 20
+        "bbpress/bbpress": 5
     },
     "prefer-stable": false,
     "prefer-lowest": false,

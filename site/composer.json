@@ -43,7 +43,10 @@
     "wp-sync-db/wp-sync-db-media-files": "dev-master",
     "bbpress/bbpress": "^2.6-rc-3",
     "afragen/github-updater": "^6.3",
-    "wow-ldd/wow-guild-roster": "^0.0.6"
+    "wow-ldd/wow-guild-roster": "^0.0.6",
+    "wpackagist-plugin/cleantalk-spam-protect": "^5.69",
+    "wpackagist-plugin/gd-bbpress-tools": "^1.9",
+    "wpackagist-plugin/gd-bbpress-attachments": "^2.4"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
