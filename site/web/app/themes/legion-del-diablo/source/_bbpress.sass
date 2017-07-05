@@ -1,0 +1,87 @@
+$heading-size: 1.8em
+
+#bbpress-forums
+  font:
+    family: 'Lato', sans-serif
+
+aside
+  border-bottom: 2px solid $grey
+  padding-bottom: 15px
+  margin-bottom: 15px
+
+  form
+    label
+      font-size: 16px !important
+      text-decoration: uppercase
+      font-family: 'Lato', sans-serif
+
+    input[type=text],
+    input[type=email],
+    input[type=password]
+      display: block
+      width: 100%
+
+  ul
+    list-style: none
+    padding-left: 0
+
+#bbp_login_widget-2
+  .bbp-submit-wrapper
+    display: block
+    float: none
+
+    button
+      display: block
+      width: 100%
+      background-color: $primary
+      color: $white
+      border: none
+      padding: 8px
+      cursor: pointer
+      border-radius: 6px
+      text-transform: uppercase
+      transition: all 300ms
+      font:
+        family: 'Teko', sans-serif
+        weight: 700
+        size: 1.2em
+
+      &:hover
+        background-color: darken($primary, 10%)
+
+  .bbp-login-links
+    display: block
+    width: 100%
+    font-size: .8em
+
+    &:after
+      content: ""
+      display: table
+      clear: both
+
+    a
+      display: inline-block
+      padding-top: 15px
+      margin: 0
+      line-height: 16px
+
+    a:first-child
+      float: right
+      max-width: 40%
+
+    a:last-child
+      float: left
+      max-width: 40%
+
+  h4
+    padding: 0
+    margin: 0
+
+  a.logout-link
+    font-size: .8em
+
+.widget-title
+  font-size: $heading-size
+  text-align: center
+  display: block
+  width: 100%

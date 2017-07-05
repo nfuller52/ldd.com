@@ -19,7 +19,7 @@ function ldd_styles_enqueue() {
     wp_enqueue_script( 'ldd_theme_js_main', get_template_directory_uri() . '/public/javascripts/ldd-min.js', array( 'jquery' ), '1.0.0', true );
 
 }
-add_action( 'wp_enqueue_scripts', 'ldd_styles_enqueue' );
+add_action( 'wp_enqueue_scripts', 'ldd_styles_enqueue', 100 );
 
 function ldd_theme_setup() {
 
@@ -48,3 +48,10 @@ function ldd_widget_setup() {
 
 }
 add_action( 'widgets_init', 'ldd_widget_setup' );
+
+function ldd_handle_admin_bar() {
+
+    return is_admin() ? true : false;
+
+}
+add_filter( 'show_admin_bar', 'ldd_handle_admin_bar' );
